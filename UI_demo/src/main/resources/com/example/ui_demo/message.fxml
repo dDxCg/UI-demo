@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui_demo.MessageController">
+   <children>
+      <AnchorPane prefHeight="640.0" prefWidth="360.0" styleClass="bg">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="150.0" prefHeight="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="Exit" prefHeight="35.0" prefWidth="35.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/exit.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="menuButton" />
+                        <String fx:value="pressEffect2" />
+                        <String fx:value="hoverEffect2" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Back" prefHeight="35.0" prefWidth="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/left.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="menuButton" />
+                        <String fx:value="pressEffect2" />
+                        <String fx:value="hoverEffect2" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <image>
+                        <Image url="@Texture/sampleavt.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="21.0" text="Tên người liên hệ" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="230.0" layoutY="15.0" spacing="15.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <ImageView fx:id="Call" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/call.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="VideoCall" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/Videocall.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/Infor.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="14.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+               <content>
+                  <AnchorPane prefHeight="600.0" prefWidth="360.0" styleClass="bg">
+                     <children>
+                        <AnchorPane layoutX="43.0" layoutY="79.0" prefHeight="50.0" prefWidth="200.0" styleClass="receiveMess" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <TextFlow layoutX="-31.0" layoutY="-75.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                 <children>
+                                    <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFill2" text="Sample mess">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="101.0" layoutY="101.0" prefHeight="100.0" prefWidth="200.0" styleClass="sentMess" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+                           <children>
+                              <TextFlow prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                 <children>
+                                    <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textFill2" text="Sample mess">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <styleClass>
+                  <String fx:value="transTheme" />
+                  <String fx:value="scroll-bar" />
+               </styleClass>
+            </ScrollPane>
+            <AnchorPane layoutX="96.0" layoutY="419.0" prefHeight="80.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/plus.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/camera.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="35.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/picture.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="61.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                           <image>
+                              <Image url="@Texture/micro.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="10.0" layoutY="69.66666412353516" prefHeight="30.0" styleClass="searchBar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="300.6666564941406" layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="hoverEffect2">
+                                 <image>
+                                    <Image url="@Texture/emo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <TextField promptText="Nhắn tin" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="searchBar" />
+                              <String fx:value="textFill2" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

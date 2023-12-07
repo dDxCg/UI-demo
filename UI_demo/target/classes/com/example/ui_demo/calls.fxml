@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="360.0" styleClass="bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui_demo.CallsController">
+   <children>
+      <AnchorPane prefHeight="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="Exit" prefHeight="35.0" prefWidth="35.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Texture/exit.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="menuButton" />
+                  <String fx:value="pressEffect2" />
+                  <String fx:value="hoverEffect2" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="Back" prefHeight="35.0" prefWidth="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Texture/left.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="menuButton" />
+                  <String fx:value="pressEffect2" />
+                  <String fx:value="hoverEffect2" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutY="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <content>
+            <AnchorPane prefHeight="580.0" prefWidth="360.0" styleClass="bg">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Gần đây" textFill="#f2f2f2" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="55.0" onMouseClicked="#switchToMessage" styleClass="pressEffect" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="60.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
+                           <image>
+                              <Image url="@Texture/sampleavt.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="58.0" layoutY="17.0" text="User#1" textFill="#f2f2f2" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="10.0" text="Cuộc gọi đến" textFill="#f2f2f2" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="274.6666564941406" layoutY="70.0" prefHeight="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+                     <children>
+                        <HBox alignment="CENTER" spacing="15.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" onMouseClicked="#switchToCalling" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/call.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#switchToVideoCalling" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/Videocall.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="70.0" onMouseClicked="#switchToMessage" styleClass="pressEffect" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="120.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
+                           <image>
+                              <Image url="@Texture/sampleavt.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="58.0" layoutY="17.0" text="User#1" textFill="#f2f2f2" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="10.0" text="Cuộc gọi đến" textFill="#f2f2f2" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="285.0" layoutY="70.0" prefHeight="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+                     <children>
+                        <HBox alignment="CENTER" spacing="15.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" onMouseClicked="#switchToCalling" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/call.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#switchToVideoCalling" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/Videocall.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+         <styleClass>
+            <String fx:value="transTheme" />
+            <String fx:value="scroll-bar" />
+         </styleClass>
+      </ScrollPane>
+   </children>
+</AnchorPane>

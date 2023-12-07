@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui_demo.MainController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" styleClass="bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="35.0" prefWidth="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <styleClass>
+                        <String fx:value="menuButton" />
+                        <String fx:value="pressEffect2" />
+                        <String fx:value="hoverEffect2" />
+                     </styleClass>
+                     <children>
+                        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/menu.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Exit" prefHeight="35.0" prefWidth="35.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Texture/exit.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="menuButton" />
+                        <String fx:value="pressEffect2" />
+                        <String fx:value="hoverEffect2" />
+                     </styleClass>
+                  </AnchorPane>
+                  <Label layoutX="83.0" layoutY="17.0" text="Đoạn chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="35.0" prefWidth="200.0" styleClass="searchBar" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <VBox alignment="CENTER" prefWidth="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Texture/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <TextField promptText="Tìm kiếm" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="transTheme" />
+                        <String fx:value="textFill" />
+                     </styleClass>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="67.0" layoutY="141.0" prefHeight="70.0" prefViewportWidth="500.0" prefWidth="200.0" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+               <styleClass>
+                  <String fx:value="scroll-bar" />
+                  <String fx:value="bg" />
+               </styleClass>
+               <content>
+                  <HBox prefHeight="70.0" prefWidth="500.0" styleClass="bg">
+                     <children>
+                        <StackPane prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/add.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="-4.0" layoutY="48.0" text="Thêm chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="pressEffect" />
+                                    <String fx:value="hoverEffect" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="10.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#1" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="90.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#2" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="170.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#3" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="225.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#4" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="295.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#5" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="365.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="70.0" prefWidth="70.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="70.0" styleClass="pressEffect">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@Texture/sampleavt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="28.0" layoutY="48.0" text="User#6" textFill="#f2f2f2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="14.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="360.0" styleClass="bg" stylesheets="@style.css">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane onMouseClicked="#switchToMessage" prefHeight="60.0" prefWidth="200.0" styleClass="pressEffect">
+                                 <children>
+                                    <AnchorPane prefHeight="50.0" prefWidth="50.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                             <image>
+                                                <Image url="@Texture/sampleavt.png" />
+                                             </image>
+                                          </ImageView>
+                                          <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="70.0" layoutY="28.0" prefHeight="25.0" prefWidth="241.0" text="Chat#1" textFill="#f2f2f2" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="80.0" layoutY="20.0" prefHeight="25.0" prefWidth="241.0" text="Latest chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" onMouseClicked="#switchToMessage" prefHeight="60.0" prefWidth="200.0" styleClass="pressEffect">
+                                 <children>
+                                    <AnchorPane prefHeight="50.0" prefWidth="50.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                             <image>
+                                                <Image url="@Texture/sampleavt.png" />
+                                             </image>
+                                          </ImageView>
+                                          <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="70.0" layoutY="28.0" prefHeight="25.0" prefWidth="241.0" text="Chat#2" textFill="#f2f2f2" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="80.0" layoutY="20.0" prefHeight="25.0" prefWidth="241.0" text="Latest chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="70.0" onMouseClicked="#switchToMessage" prefHeight="60.0" prefWidth="200.0" styleClass="pressEffect">
+                                 <children>
+                                    <AnchorPane prefHeight="50.0" prefWidth="50.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                             <image>
+                                                <Image url="@Texture/sampleavt.png" />
+                                             </image>
+                                          </ImageView>
+                                          <AnchorPane layoutX="46.0" layoutY="43.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: green;" styleClass="activeIcon" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="70.0" layoutY="28.0" prefHeight="25.0" prefWidth="241.0" text="Chat#3" textFill="#f2f2f2" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="80.0" layoutY="20.0" prefHeight="25.0" prefWidth="241.0" text="Latest chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="scroll-bar" />
+               </styleClass>
+            </ScrollPane>
+            <AnchorPane prefHeight="50.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="ChatButton" prefHeight="50.0" prefWidth="120.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@Texture/chatIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" text="Đoạn chat" textFill="#f2f2f2" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="pressEffect" />
+                              <String fx:value="hoverEffect2" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane fx:id="CallButton" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="120.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@Texture/call.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" text="Cuộc gọi" textFill="#f2f2f2" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="pressEffect" />
+                              <String fx:value="hoverEffect2" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane fx:id="UsersButton" layoutX="80.0" layoutY="10.0" prefHeight="50.0" prefWidth="120.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@Texture/users.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" text="Danh bạ" textFill="#f2f2f2" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="pressEffect" />
+                              <String fx:value="hoverEffect2" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
